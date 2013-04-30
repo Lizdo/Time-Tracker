@@ -15,7 +15,6 @@
 		6E119ACF172ED71200DD3A24 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E119ACD172ED71200DD3A24 /* MainMenu.xib */; };
 		6E119AD8172EF10700DD3A24 /* TimeTracker.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E119AD7172EF10700DD3A24 /* TimeTracker.png */; };
 		6E119ADA172EF1C600DD3A24 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6E119AD9172EF1C600DD3A24 /* Icon.icns */; };
-		6E119ADE172EF46100DD3A24 /* TimeTracker20x20.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E119ADD172EF46100DD3A24 /* TimeTracker20x20.png */; };
 		6E119AE1172EF66C00DD3A24 /* StatusIconActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E119ADF172EF66C00DD3A24 /* StatusIconActive.png */; };
 		6E119AE2172EF66C00DD3A24 /* StatusIconInactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E119AE0172EF66C00DD3A24 /* StatusIconInactive.png */; };
 /* End PBXBuildFile section */
@@ -36,7 +35,6 @@
 		6E119ACE172ED71200DD3A24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6E119AD7172EF10700DD3A24 /* TimeTracker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeTracker.png; sourceTree = "<group>"; };
 		6E119AD9172EF1C600DD3A24 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
-		6E119ADD172EF46100DD3A24 /* TimeTracker20x20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeTracker20x20.png; sourceTree = "<group>"; };
 		6E119ADF172EF66C00DD3A24 /* StatusIconActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusIconActive.png; sourceTree = "<group>"; };
 		6E119AE0172EF66C00DD3A24 /* StatusIconInactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusIconInactive.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,7 +103,6 @@
 			children = (
 				6E119ADF172EF66C00DD3A24 /* StatusIconActive.png */,
 				6E119AE0172EF66C00DD3A24 /* StatusIconInactive.png */,
-				6E119ADD172EF46100DD3A24 /* TimeTracker20x20.png */,
 				6E119AD9172EF1C600DD3A24 /* Icon.icns */,
 				6E119AD7172EF10700DD3A24 /* TimeTracker.png */,
 				6E119AC0172ED71100DD3A24 /* MinimalTimeTracking-Info.plist */,
@@ -174,7 +171,6 @@
 				6E119ACF172ED71200DD3A24 /* MainMenu.xib in Resources */,
 				6E119AD8172EF10700DD3A24 /* TimeTracker.png in Resources */,
 				6E119ADA172EF1C600DD3A24 /* Icon.icns in Resources */,
-				6E119ADE172EF46100DD3A24 /* TimeTracker20x20.png in Resources */,
 				6E119AE1172EF66C00DD3A24 /* StatusIconActive.png in Resources */,
 				6E119AE2172EF66C00DD3A24 /* StatusIconInactive.png in Resources */,
 			);
@@ -324,6 +320,7 @@
 				6E119AD4172ED71200DD3A24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
