@@ -3,7 +3,7 @@
 //  MinimalTimeTracking
 //
 //  Created by Liz on 13-4-30.
-//  Copyright (c) 2013年 Liz. All rights reserved.
+//  Copyright (c) 2013 Liz. All rights reserved.
 //
 
 #import "MTTAppDelegate.h"
@@ -96,6 +96,15 @@
     int seconds = remainingTime;
     NSString *secondsString = (seconds == 0 ? @"" :[NSString stringWithFormat:@"%d seconds ", seconds]);
     
+    // Hide seconds if we're over an hour
+    if (days != 0 || hours != 0){
+        secondsString = @"";
+    }
+    
+    // Hide minutes if we're over a day
+    if (days !=0) {
+        minutesString = @"";
+    }
     
     return [NSString stringWithFormat:@"%@%@%@%@", dayString, hourString, minutesString, secondsString];
 }
@@ -104,9 +113,6 @@
 {
     [[NSUserDefaults standardUserDefaults]setFloat:_elapsedTime forKey:kElapasedTime];
 }
-
-
-
 
 
 @end
