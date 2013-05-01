@@ -37,6 +37,7 @@
 		6E119AD9172EF1C600DD3A24 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		6E119ADF172EF66C00DD3A24 /* StatusIconActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusIconActive.png; sourceTree = "<group>"; };
 		6E119AE0172EF66C00DD3A24 /* StatusIconInactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusIconInactive.png; sourceTree = "<group>"; };
+		6EFD32AD1730C610007370DC /* MinimalTimeTracking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MinimalTimeTracking.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		6E119ABE172ED71100DD3A24 /* MinimalTimeTracking */ = {
 			isa = PBXGroup;
 			children = (
+				6EFD32AD1730C610007370DC /* MinimalTimeTracking.entitlements */,
 				6E119ACA172ED71200DD3A24 /* MTTAppDelegate.h */,
 				6E119ACB172ED71200DD3A24 /* MTTAppDelegate.m */,
 				6E119ACD172ED71200DD3A24 /* MainMenu.xib */,
@@ -284,6 +286,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinimalTimeTracking/MinimalTimeTracking-Prefix.pch";
 				INFOPLIST_FILE = "MinimalTimeTracking/MinimalTimeTracking-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -296,6 +299,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinimalTimeTracking/MinimalTimeTracking-Prefix.pch";
 				INFOPLIST_FILE = "MinimalTimeTracking/MinimalTimeTracking-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

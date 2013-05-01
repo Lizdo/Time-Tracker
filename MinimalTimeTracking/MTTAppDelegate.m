@@ -54,9 +54,26 @@
 
 - (IBAction)reset:(id)sender
 {
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert addButtonWithTitle:NSLocalizedString(@"Reset it.", @"")];
+    [alert addButtonWithTitle:NSLocalizedString(@"Not right now.", @"")];
+    [alert setMessageText:NSLocalizedString(@"Reset the timer?", @"")];
+    [alert setInformativeText:NSLocalizedString(@"Your timer will be reset to 0. You won't be able to get your time back.", @"")];
+    [alert setAlertStyle:NSWarningAlertStyle];
+    
+    if ([alert runModal] == NSAlertFirstButtonReturn) {
+        // OK clicked, delete the record
+        [self doReset];
+    }
+}
+
+
+- (void)doReset
+{
     _elapsedTime = 0.0f;
     [_elapsedTimeItem setTitle:[self elapsedTimeString]];
 }
+
 
 - (IBAction)quit:(id)sender
 {
