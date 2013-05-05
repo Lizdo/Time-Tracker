@@ -34,7 +34,7 @@
     _statusItem = [bar statusItemWithLength:NSVariableStatusItemLength];
     
     //[_statusItem setTitle: NSLocalizedString(@"Time Tracker",@"")];
-    [_statusItem setImage:[NSImage imageNamed:@"StatusIconActive.png"]];
+    [_statusItem setImage:[NSImage imageNamed:@"StatusIconActive"]];
     [_statusItem setHighlightMode:YES];
     [_statusItem setMenu:_statusBarMenu];
 }
@@ -45,10 +45,10 @@
     self.paused = !self.paused;
     if (self.paused){
         [_pauseResumeItem setTitle: NSLocalizedString(@"Resume", @"")];
-        [_statusItem setImage:[NSImage imageNamed:@"StatusIconInactive.png"]];
+        [_statusItem setImage:[NSImage imageNamed:@"StatusIconInactive"]];
     }else{
         [_pauseResumeItem setTitle: NSLocalizedString(@"Pause", @"")];
-        [_statusItem setImage:[NSImage imageNamed:@"StatusIconActive.png"]];
+        [_statusItem setImage:[NSImage imageNamed:@"StatusIconActive"]];
     }
 }
 
